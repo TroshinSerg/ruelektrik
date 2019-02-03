@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная страница ру электрик</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body class="page">
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="header">
+      <div class="header__inner">
+        <button class="header__toggle" type="button">
+          <span class="visually--hidden">Меню</span>
+        </button>
+        <a class="header__logo logo">
+          logotip
+          <svg class="logo__big-stars" width="147" height="40" role="img" aria-label="Логотип сайта Ру Электрик">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+        <form class="header__form form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="form__field form__field--search" type="search" name="search" placeholder="Поиск">
+        </form>
+        <p class="header__phone" href="#"><span class="header__phone-code">8 (495)</span> 740-57-02</p>
+        <ul class="header__worktime">
+          <li class="header__worktime-item">Пн - Пт с 9 до 18</li>
+          <li class="header__worktime-item">Сб - Вс выходной</li>
+        </ul>
+        <ul class="user-nav">
+          <li class="user-nav__item user-nav__item--cart">
+            <a class="user-nav__link" href="#">
+              <span class="user-nav__product-amount">356 товаров</span>
+              <span class="user-nav__price">200000 руб.</span>
+            </a>
+          </li>
+          <li class="user-nav__item user-nav__item--cart">
+            <a class="user-nav__link" href="#">
+              <span class="user-nav__text">Войти</span>
+            </a>
+          </li>
+        </ul>
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--current">
+              <a class="navigation__link">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">О компании</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Бренд</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Оплата и доставка</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+
+    </main>
+  </body>
+</html>
