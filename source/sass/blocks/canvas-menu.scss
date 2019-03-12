@@ -1,0 +1,33 @@
+.canvas-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 265px;
+  padding: 25px 15px;
+  transform: translateX(-265px);
+  transition: transform 0.3s;
+  background-color: $bg-color;
+
+  &--opened {
+    transform: translateX(0);
+  }
+}
+
+.canvas-menu__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: $tablet-landscape-width) {
+  .canvas-menu {
+    display: none;
+  }
+}

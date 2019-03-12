@@ -1,0 +1,28 @@
+.aside {
+  display: none;
+}
+
+@media screen and (min-width: $tablet-width) {
+
+}
+
+@media screen and (min-width: $tablet-landscape-width) {
+  .aside {
+    display: block;
+    width: 322px;
+    padding: 25px 15px;
+    flex-shrink: 0;
+    background-color: $bg-color;
+  }
+
+  .aside__logo {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: $desctop-width) {
+  .aside {
+    width: 320px;
+    padding-bottom: 0;
+  }
+}

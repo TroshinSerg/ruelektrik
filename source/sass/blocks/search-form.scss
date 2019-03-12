@@ -1,0 +1,46 @@
+.search-form__field {
+  width: 100%;
+  padding: 6px 26px 6px 13px;
+  @include text-size(12px, 1, $base-color);
+  border: none;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-color: #e8e8e8;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAABYElEQVQ4jZXTz0vUQRzG8Zc/EFzBIhINJHCv0SUwQfYgtCFEf4IHDx1CQyQ7dlh/HTyIJHjxL9h7KNYhEEKDPCpSoeAidJLAIkKJOnznC+PgovvA8BnmM7x5ZuaZpnK5LNFdjGAIN7GHKt6lG6FUKmlO1pZwhHk8QBdGsYFD3LsMFEPeYxILuB1GH5rwNLjaxUAKaQ11BY8xHGCp1nALB/iENpzHTroxhjd1ALHuh7qcHmc8zCevAMBvrON5CnmEk2sAclVDvRNDCvjVAOQ01I4Y8gW9DUD6Qz2OIatokYXrOnqBb/iTL7TiA77LLqxwBeAlbuBCzPOwDaEd++ipA5jCIj5jJ27kYfuKQWxFrt7KXu0hnskS+xElvMZcCoFtdMr+zRieRL0dvMImKpgNp5hJIfATE2H0yuJ9jLNoTwX/MC37V9MtxWKxzhU4xQ/8vaS3GQCVWq1WSJ00otzR2X8uKESYK3X9MwAAAABJRU5ErkJggg==");
+}
+
+@media screen and (min-width: $mobile-landscape-width) {
+
+}
+
+@media screen and (min-width: $tablet-width) {
+
+}
+
+@media screen and (min-width: $tablet-landscape-width) {
+  .search-form {
+    position: relative;
+  }
+
+  .search-form__field {
+    &:focus {
+      position: absolute;
+      top: -4px;
+      right: 0;
+      width: 962px;
+      height: 34px;
+      transition: width 0.3s;
+    }
+  }
+}
+
+@media screen and (min-width: $desctop-width) {
+  .search-form__field {
+    &:focus {
+      position: static;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

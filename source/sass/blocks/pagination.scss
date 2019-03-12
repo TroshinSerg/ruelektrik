@@ -1,0 +1,27 @@
+.pagination {
+  @include list-reset();
+  display: flex;
+}
+
+.pagination__item {
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.pagination__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  padding-top: 9px;
+  text-align: center;
+  text-decoration: none;
+
+  @include text-size(14px, 1);
+
+  &--current,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-color: $bg-color;
+  }
+}

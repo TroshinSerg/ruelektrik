@@ -1,0 +1,50 @@
+.navigation {
+  display: none;
+}
+/*
+
+*/
+@media screen and (min-width: $mobile-landscape-width) {
+
+}
+
+@media screen and (min-width: $tablet-width) {
+
+}
+
+@media screen and (min-width: $tablet-landscape-width) {
+  .navigation {
+    display: block;
+  }
+
+  .navigation__list {
+    @include list-reset();
+    display: flex;
+  }
+
+  .navigation__item {
+
+  }
+
+  .navigation__link {
+    display: block;
+    padding: 15px 7px;
+    @include text-size(14px, 1, #bebebe);
+
+    &--current {
+      background-color: #202020;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: lighten(#202020, 10%);
+    }
+  }
+}
+
+@media screen and (min-width: $desctop-width) {
+  .navigation__link {
+    padding-left:  10px;
+    padding-right: 10px;
+  }
+}

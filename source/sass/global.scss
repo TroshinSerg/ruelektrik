@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "Open Sans";
-  font-weight: 300;
+  font-family: "HelveticaNeue Cur";
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+  src: local("HelveticaNeueCur Bold"), local("HelveticaNeueCur-Bold"), url("../fonts/helveticabold.woff2") format("woff2"), url("../fonts/helveticabold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "HelveticaNeue Cur";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  src: local("HelveticaNeueCur Roman"), local("HelveticaNeueCur-Roman"), url("../fonts/helveticaregular.woff2") format("woff2"), url("../fonts/helveticaregular.woff") format("woff");
 }
 
 @font-face {
@@ -22,7 +22,14 @@
   src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
 }
 
-$basecolor: #333333;
+$base-color: #444444;
+$bg-color: #e8e8e8;
+
+$mobile-width: 480px;
+$mobile-landscape-width: 575px;
+$tablet-width: 768px;
+$tablet-landscape-width: 992px;
+$desctop-width: 1230px;
 
 html {
   box-sizing: border-box;
@@ -38,11 +45,12 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
+  font-family: "HelveticaNeue Cur", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
   font-weight: 400;
-  color: $basecolor;
+  color: $base-color;
+  background-color: $bg-color;
 }
 
 a {
@@ -60,13 +68,17 @@ a {
   border: 0;
 }
 
+.d-none {
+  display: none !important;
+}
+
 @mixin list-reset() {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-@mixin text-size($fz: 14px, $lh: 1, $c: #283645) {
+@mixin text-size($fz: 14px, $lh: 1, $c: $base-color) {
   font-size: $fz;
   line-height: $lh;
   color: $c;

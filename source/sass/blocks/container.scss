@@ -1,0 +1,34 @@
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container > * {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+@media screen and (min-width: $mobile-landscape-width) {
+  .container {
+    max-width: $mobile-landscape-width;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .container {
+    max-width: $tablet-width;
+  }
+}
+
+@media screen and (min-width: $tablet-landscape-width) {
+  .container {
+    max-width: $tablet-landscape-width;
+  }
+}
+
+@media screen and (min-width: $desctop-width) {
+  .container {
+    max-width: $desctop-width;
+  }
+}

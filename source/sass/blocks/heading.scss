@@ -1,0 +1,22 @@
+.heading {
+  @include text-size(23px, 1.1);
+  font-weight: 700;
+}
+
+@media screen and (min-width: $mobile-landscape-width) {
+
+}
+
+@media screen and (min-width: $tablet-width) {
+  .heading {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: $tablet-landscape-width) {
+
+}
+
+@media screen and (min-width: $desctop-width) {
+
+}
